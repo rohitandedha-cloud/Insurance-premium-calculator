@@ -1,21 +1,3 @@
-import subprocess
-import sys
-
-# Force installation of missing packages right inside the active environment
-try:
-    import plotly
-    import sklearn
-except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly", "scikit-learn"])
-
-
-
-
-
-
-
-
-
 import streamlit as st
 import pandas as pd
 import numpy as np
